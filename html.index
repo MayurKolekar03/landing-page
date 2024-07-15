@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http.equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title>ToDo List</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav class="container">
-                <div class="logo">
-                    <img src="ToDo.png" alt="ToDo List">
-                    <p>ToDo List</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Health System Landing Page</title>
+</head>
+<body>
+    <nav>
+        <div class="heading">Health System</div>
+        <span class="sideMenuButton" onclick="openNavbar()">
+            &#9776
+        </span>
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Side navigation bar for responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+    </div>
+    <!-- Content -->
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Health System</h1>
+            <p>Welcome to our health system, where we prioritize your well-being and provide top-notch medical care.</p>
+            <button>
+                <a href="#">Learn More</a>
+            </button>
+        </div>
+        <div class="side2">
+            <img src="healthcare.jpg" width="500">
+        </div>
+    </div>
+    <section class="about" id="About">
+        <div class="content">
+            <div class="title">
+                <span>About Us</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">Our Mission</a>
+                    </div>
+                    <p>
+                        Our mission is to provide high-quality medical care to our patients, while promoting a culture of compassion, respect, and excellence.
+                    </p>
                 </div>
-                <ul>
-                    <a href="ToDo.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="main">
-                        <li>Contacts</li>
-                    </a>
-                    <a href="main">
-                        <li>Sign in</li>
-                    </a>    
-                </ul>
-            </nav>
-        </header>
-        <div class="main">
-            <img src="scroll.png" alt="scroll image">
-            <div class="content">
-                <div class="container">
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">Our Team</a>
                     </div>
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
-                    </div>
-                    <div class="todo">
-                        <input class="todo_value" type="text" placeholder="(empty)">
-                        <input class="todo_checkbox" type="checkbox">
-                    </div>
+                    <p>
+                        Our team of experienced healthcare professionals is dedicated to providing personalized care to our patients.
+                    </p>
                 </div>
             </div>
         </div>
-    </body>
+    </section>
+    <section class="contact" id="Contact">
+        <div class="content">
+            <div class="title">
+                <span>Get in Touch</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">Contact Us</a>
+                    </div>
+                    <p>
+                        Have a question or concern? Contact us today to learn more about our health system.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">Location</a>
+                    </div>
+                    <p>
+                        Our health system is located at 123 Main St, Anytown, USA.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
 </html>
